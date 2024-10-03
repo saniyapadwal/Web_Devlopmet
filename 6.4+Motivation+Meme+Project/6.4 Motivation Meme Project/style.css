@@ -1,0 +1,43 @@
+body{
+  background-color: black;
+}
+div{
+    height: 500px;
+    width: 700px;
+    margin-left: 25%;
+    width: 50%;
+    /*display: flex;
+    margin-top: 0 auto;
+    margin-bottom: 0 auto;
+    justify-content: center;
+    */ 
+    margin-top: 100px;
+    background-color: blanchedalmond;
+  }
+  h1{
+    margin: 0;
+    text-align: center;
+    color: azure;
+  }
+  p{
+    margin: 0;
+    text-align: center;
+    color: azure;
+  }
+  /*#first{
+    background-color: black;
+    padding-bottom: 40px;
+    border: 10px solid blanchedalmond;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 0;
+    margin-bottom: 100%;
+  }*/
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid white;
+    /*width: 100%;*/
+  }
+  
