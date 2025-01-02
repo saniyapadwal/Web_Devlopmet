@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Web Page with JavaScript Variables</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .user-info {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .date-container {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to My Dynamic Web Page</h1>
+
+        <div class="user-info" id="userInfo">
+            <!-- JavaScript will populate user info here -->
+        </div>
+
+        <h2>About Me</h2>
+        <p id="aboutText">
+            <!-- JavaScript will populate about me section -->
+        </p>
+
+        <button onclick="changeContent()">Click to Change Info</button>
+
+        <div class="date-container">
+            <p>Today's Date: <span id="currentDate"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript Variables
+        var userName = "Saniya Padwal";
+        var userAge = 20;
+        var userProfession = "Undergraduate IT Student";
+        var aboutText = "I am passionate about learning and exploring new technologies in web development and software engineering. My main skills include Java, Python, and JavaScript.";
+
+        // Display user information
+        document.getElementById("userInfo").innerHTML = "Name: " + userName + "<br>Age: " + userAge + "<br>Profession: " + userProfession;
+
+        // Display the about me text
+        document.getElementById("aboutText").innerHTML = aboutText;
+
+        // Display current date
+        var currentDate = new Date();
+        document.getElementById("currentDate").innerHTML = currentDate.toDateString();
+
+        // Function to change content on button click
+        function changeContent() {
+            // Modify JavaScript variables
+            userName = "Mervin Sequeira";
+            userAge = 20;
+            userProfession = "Software Developer";
+            aboutText = "Mervin is a software developer with a strong interest in full-stack development and artificial intelligence.";
+
+            // Update the content on the webpage
+            document.getElementById("userInfo").innerHTML = "Name: " + userName + "<br>Age: " + userAge + "<br>Profession: " + userProfession;
+            document.getElementById("aboutText").innerHTML = aboutText;
+        }
+    </script>
+
+</body>
+</html>
